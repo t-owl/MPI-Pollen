@@ -1,6 +1,6 @@
 # Overview
 
-This Project knowledge of MPI programming to parallelise and extend a given serial code.
+This Project requires knowledge of MPI programming to parallelise and extend a given serial code.
 
 The serial code is a naïve model of pollen blowing in the wind and slowly falling to the ground. We initialise NUMPOLLEN pollen particles to random (x,y,z) and for each of MAXTIME timesteps we apply a given wind function and a force proportional to gravity and count how many pollen particles have hit the ground in timestep t, `totalNumGround[t]`.
 
