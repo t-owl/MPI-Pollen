@@ -14,7 +14,7 @@ In order to make the code parallel the following steps were followed:
 
 The parallelisation of the code is divided into two main parts, one part handles the simulation of pollen falling into the ground (Part 1), where as the other handles the computation of the best linear fit line (Part 2). 
 
-**Part 1**. The process with rank 0 acts as the root / master, this process coordinates with the other processes to perform the job. The `root ` process initialises the data and it then **broadcasts** the data to all other processes. Once each process has received the data each process decides on which part of the data they need to perform processing, the amount of data they have to work in is decided in the overhead by the division of the tasks and the number of process available. Once results are computed then they are accumulated using **reduction (`Reduce/Allreduce`)** process, e.g. if four processes have computed the local sum based on their part of data then we will accumulate them into one grand sum by using reduction.
+**Part 1**. The process with rank 0 acts as the root / master, this process coordinates with the other processes to perform the job. The `root` process initialises the data and it then **broadcasts** the data to all other processes. Once each process has received the data each process decides on which part of the data they need to perform processing, the amount of data they have to work in is decided in the overhead by the division of the tasks and the number of process available. Once results are computed then they are accumulated using **reduction (`Reduce/Allreduce`)** process, e.g. if four processes have computed the local sum based on their part of data then we will accumulate them into one grand sum by using reduction.
 
 
 
