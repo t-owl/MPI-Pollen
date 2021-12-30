@@ -91,9 +91,9 @@ The line that determines the best linear fit is **Y = mX+c**. (Mathsisfun.com, 2
 
 So to find m and c we apply the following formulas:
 
-<img src="https://render.githubusercontent.com/render/math?math=m=\frac{N\sum_{xy}-\sum_{x}\sum_{y}}{N\sum_{x^{2}}-(\sum_{x})^{2}}">
+<img src="https://render.githubusercontent.com/render/math?math=m=\frac{N\sum_{xy}-\sum_{x}\sum_{y}}{N\sum_{x^{2}}-(\sum_{x})^{2}}#gh-light-mode-only"><img src="https://render.githubusercontent.com/render/math?math=\color{White}m=\frac{N\sum_{xy}-\sum_{x}\sum_{y}}{N\sum_{x^{2}}-(\sum_{x})^{2}}#gh-dark-mode-only">
 
-<img src="https://render.githubusercontent.com/render/math?math=c=\frac{\sum_{y}-m\sum_{x}}{N}">
+<img src="https://render.githubusercontent.com/render/math?math=c=\frac{\sum_{y}-m\sum_{x}}{N}#gh-light-mode-only"><img src="https://render.githubusercontent.com/render/math?math=\color{White}c=\frac{\sum_{y}-m\sum_{x}}{N}#gh-dark-mode-only">
 
 
 In the implementation of the serial code two functions were created for each variable m and c, m being the slope of the line and c being the intercept (where the line intercepts the y axes), the two functions were created to keep a more organised code and follow good coding practices.
